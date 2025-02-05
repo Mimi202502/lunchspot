@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spin the Wheel - Halal Malay Lunch Spot in Shah Alam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin the Wheel - Halal Malay Lunch Spot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 20px;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
         }
         h1 {
-            margin-bottom: 20px;
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
         .wheel-container {
             position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 20px auto;
+            width: 90vw; /* Adjusts based on viewport width */
+            max-width: 300px;
+            height: 90vw;
+            max-height: 300px;
+            margin: 10px auto;
         }
         .wheel {
             width: 100%;
@@ -37,44 +43,46 @@
         .pointer {
             width: 0;
             height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-bottom: 40px solid red;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid red;
             position: absolute;
             top: -10px;
             left: 50%;
             transform: translateX(-50%);
         }
         .spin-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
+            margin-top: 15px;
+            padding: 12px 18px;
+            font-size: 1.2em;
             background: #28a745;
             color: white;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 250px;
         }
         .spin-button:hover {
             background: #218838;
         }
         .result {
             margin-top: 20px;
-            font-size: 20px;
+            font-size: 1.2em;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <h1>Spin the Wheel - Find Your Lucky Lunch Spot!</h1>
+    <h1>Spin the Wheel - Find Your Lucky Lunch Spot! 🍛</h1>
     
     <div class="wheel-container">
         <div class="pointer"></div>
         <div class="wheel" id="wheel"></div>
     </div>
 
-    <button class="spin-button" onclick="spinWheel()">SPIN</button>
+    <button class="spin-button" onclick="spinWheel()">🎡 SPIN NOW</button>
 
     <div class="result" id="result">Click the button to spin!</div>
 
